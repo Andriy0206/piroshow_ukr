@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Кольоровий дим</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script> <!-- додали HTMX -->
+</head>
+<body>
+  <header class="header">
+    <nav 
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav.partial.html"
+    ></nav>
+  </header>
+  <main>
+    <!-- Основний контент сторінки -->
+     <h1>Кольоровий дим</h1>
+  <p>Зробіть своє свято яскравішим!</p>
+  
+  </main>
+
+  <footer>
+    <!-- Нижня частина сайту: контакти, копірайт -->
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
