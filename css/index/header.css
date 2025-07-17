@@ -11,11 +11,14 @@
       .header__nav-phone {
       }
       .header__nav-social-list {
+
         .header__nav-social-logo {
-            border-radius: 50%;
+          width: 150px; /* або 15%, але краще фіксований px */
+          height: auto; /* зберігає пропорції */
+          border-radius: 12px; /* закруглення кутів */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* тінь */
+          object-fit: contain;
         }
-      }
-      .header__nav-social-list {
       }
       .header__nav-logo-group {
         display: flex;
