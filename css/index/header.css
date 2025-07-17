@@ -1,0 +1,37 @@
+.header__nav {
+  .header__nav-container {
+    display: flex;
+    flex-direction: column;
+    .header__nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .header__nav-phone {
+      }
+      .header__nav-social-list {
+        .header__nav-social-logo {
+            border-radius: 50%;
+        }
+      }
+      .header__nav-social-list {
+      }
+      .header__nav-logo-group {
+        display: flex;
+        justify-content: space-between; /* логотип ліворуч, меню праворуч */
+        align-items: center;
+        .header__nav-logo {
+          img {
+            max-width: 120px; /* обмеження розміру лого */
+            height: auto;
+          }
+        }
+        .header__nav-menu {
+          .header__nav-menu-item {
+          }
+        }
+      }
+    }
+  }
+}
