@@ -1,0 +1,41 @@
+.header__nav {
+  .header__nav-container {
+    .header__nav-top {
+      .header__nav-phone {
+        .header__nav-phone-text {
+        }
+      }
+      .header__nav-social-list {
+      }
+    }
+    .header__nav-logo-group {
+      .header__nav-logo {
+        background-color: #fff7f0; /* такий самий як у .catalog__card */
+        background-image: url("../img/background-skoke-one.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: fit-content;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        
+
+      &:hover {
+        background-color: var(--color-secondary);
+        transform: scale(1.05);
+      }
+      .header__nav-menu {
+        .header__nav-menu-item {
+          .header_title_link {
+          }
+        }
+      }
+    }
+  }
+}
