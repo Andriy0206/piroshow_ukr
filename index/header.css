@@ -1,38 +1,107 @@
 .header__nav {
   .header__nav-container {
     .header__nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+
       .header__nav-phone {
+        display: flex;
+        align-items: center;
+
         .header__nav-phone-text {
+          color: #fff;
+          font-size: 1rem;
+          margin-right: 0.5rem;
+
+          .header__nav-phone-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #218838;
+            }
+          }
         }
       }
+
       .header__nav-social-list {
+        display: flex;
+        gap: 1rem;
+
+        .header__nav-social-link {
+          color: #dddd10;
+          font-size: 1.5rem;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--color-secondary);
+          }
+        }
       }
     }
+
     .header__nav-logo-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: color;
+
       .header__nav-logo {
-        background-color: #fff7f0; /* такий самий як у .catalog__card */
         background-image: url("../img/background-skoke-one.png");
         background-size: cover;
         background-position: center;
+        width: 80%;
         border-radius: 50px;
         padding: 1rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
         width: fit-content;
         transition: transform 0.3s ease, background-color 0.3s ease;
-        
 
-      &:hover {
-        background-color: var(--color-secondary);
-        transform: scale(1.05);
+        &:hover {
+          background-color: var(--color-secondary);
+          transform: scale(1.05);
+        }
+
+        img {
+          max-width: 100px;
+          height: auto;
+          border-radius: 12px;
+        }
       }
+
       .header__nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
         .header__nav-menu-item {
+          list-style: none;
+
           .header_title_link {
+            color: var(--main-text-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: var(--color-secondary);
+            }
           }
         }
       }
