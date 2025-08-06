@@ -9,99 +9,80 @@
 
       .header__nav-phone {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+
+        padding: 1rem;
+        background-color: var(--color-tertiary);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: center;
+          gap: 1rem;
+        }
 
         .header__nav-phone-text {
-          color: #fff;
           font-size: 1rem;
-          margin-right: 0.5rem;
+          color: #ffffff;
+          margin: 0;
+        }
 
-          .header__nav-phone-link {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        .header__nav-phone-link {
+          display: inline-block;
+          background-color: var(--color-info);
+          color: #fff;
+          padding: 0.5rem 1.25rem;
+          font-weight: 600;
+          border-radius: 6px;
+          text-decoration: none;
+          transition: background-color 0.3s ease, transform 0.2s ease;
 
-            &:hover {
-              background-color: #218838;
-            }
+          &:hover {
+            color: var(--color-error);
+            background-color: var(--color-success);
+            transform: scale(1.05);
           }
         }
       }
 
       .header__nav-social-list {
+        position: fixed;
+        top: 20px; 
+        right: 20px;
         display: flex;
-        gap: 1rem;
+        flex-direction: row;
+        gap: 12px;
+        z-index: 999;
+
+        .header__nav-social-item {
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 50%;
+          padding: 8px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+        }
 
         .header__nav-social-link {
-          color: #dddd10;
-          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
           transition: color 0.3s ease;
 
           &:hover {
             color: var(--color-secondary);
           }
-        }
-      }
-    }
 
-    .header__nav-logo-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background: color;
-
-      .header__nav-logo {
-        background-image: url("../img/background-skoke-one.png");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        border-radius: 50px;
-        padding: 1rem;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-        width: fit-content;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-
-        &:hover {
-          background-color: var(--color-secondary);
-          transform: scale(1.05);
-        }
-
-        img {
-          max-width: 100px;
-          height: auto;
-          border-radius: 12px;
-        }
-      }
-
-      .header__nav-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-
-        .header__nav-menu-item {
-          list-style: none;
-
-          .header_title_link {
-            color: var(--main-text-color);
-            font-weight: 600;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: color 0.3s ease;
-
-            &:hover {
-              color: var(--color-secondary);
-            }
+          .header__nav-social-icon {
+            width: 40px;
+            height: 40px;
           }
         }
       }

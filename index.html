@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Кольоровий дим  та товари для гендерпаті</title>
+    <title>Кольоровий дим та товари для гендерпаті</title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
-    <!-- додали HTMX -->
   </head>
   <body>
     <header class="header">
@@ -21,14 +20,24 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
+        data-hx-get="index.hero.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="index.header-hero.partial.html"
       ></section>
-       <section
+      
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.catalog.partial.html"
       ></section>
     </main>
+    <a href="tel:+380637274215" class="call-button" id="floatingCall">
+  📞 Подзвонити
+</a>
+
 
     <footer>
       <!-- Нижня частина сайту: контакти, копірайт -->
