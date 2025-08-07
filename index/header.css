@@ -50,7 +50,7 @@
       }
 
       .header__nav-social-list {
-        position: fixed;
+        position: absolute;
         top: 20px; 
         right: 20px;
         display: flex;

@@ -27,7 +27,7 @@
 }
 .catalog__card {
   background-color: #fff7f0; /* або будь-який інший колір */
-  background-image: url("../img/background-skoke-one.png"); /* заміни на актуальний шлях до зображення */
+  background-image: url("../img/fon.png"); /* заміни на актуальний шлях до зображення */
   background-size: 100%;
   background-position: center;
   border-radius: 50px;
@@ -80,7 +80,7 @@
 }
 .catalog__card-type{
   color:var(--color-background);
-    background-color: var(--color-button-hover);
+    background-color: var(--color-accent, #ff4081);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     margin: 0.5rem 0; /* відступ між елементами */
@@ -89,7 +89,7 @@
 }
 .catalog__card-price{
   color:var(--color-background);
-    background-color: var(--color-button-hover);
+    background-color: var(--color-accent, #ff4081);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     margin: 0.5rem 0; /* відступ між елементами */
@@ -117,7 +117,7 @@
 
         @media (min-width: 990px) {
           grid-template-columns: repeat(4, 1fr);
-          /*три картки коли великий екран (три колонки одна частина доступного простору */
+          /*три картки коли великий екран (4 колонки одна частина доступного простору */
         }
 }
 
@@ -134,3 +134,4 @@
   background-color: var(--color-button-active);
   cursor: pointer;
 }
+
