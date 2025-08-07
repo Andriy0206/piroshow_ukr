@@ -1,0 +1,25 @@
+.crazy-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  .crazy-offer__button {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .crazy-offer__button:hover {
+    background-color: var(--color-error);
+    transform: scale(1.1);
+  }
+  .crazy-offer__button:active {
+    transform: scale(0.95);
+  }
+}

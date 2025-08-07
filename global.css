@@ -12,26 +12,26 @@
 
 :root {
   scroll-behavior: smooth;
-  
-    --color-primary: #5c6bc0;
-    --color-accent: #ffc107;
-    --color-secondary: #7745cf;
-    --color-tertiary: #ff5722;
-    --color-success: #8fdf34;
-    --color-error: #f24429;
-    --color-warning: #ff9800;
-    --color-info: #2196f3;
-    --color-light: #f5f5f5;
-    --color-dark: #212121;
-    --color-primary-background: #51d0e3;
 
-    --color-text-dark: #2e2e2e;
-    --color-text-light: #847f7f;
+  --color-primary: rgba(198, 78, 170, 0.6); /* м’який фіолетово-рожевий */
+  --color-accent: rgba(165, 47, 73, 0.65); /* пастельний рожевий */
+  --color-secondary: #987fe9; /* приглушений фіолетовий */
+  --color-tertiary: #e47755; /* пастельний помаранчевий */
+  --color-success: rgb(142, 203, 72); /* світло-зелений (успіх) */
+  --color-error: #f52c2c; /* м’який червоний (помилка) */
+  --color-warning: rgba(239, 108, 51, 0.898); /* пастельний жовто-оранжевий */
+  --color-info: #55c2f5; /* м’який блакитний (інфо) */
+  --color-light: #acabab; /* дуже світлий сірий */
+  --color-dark: #424242; /* темний сірий, не чисто чорний */
+  --color-primary-background: #cceeff; /* пастельне блакитне тло */
 
-    --color-background: #f8f8ff;
-    --color-button-hover: #4fc3f7;
-    --color-button-active: #d500f9;
-  
+  --color-text-dark: #333333; /* базовий темний текст */
+  --color-text-light: #888888; /* приглушений сірий текст */
+
+  --color-background: #fdfcfa; /* майже білий, теплий фон */
+  --color-button-hover: #b2ebf2; /* світлий бірюзовий */
+  --color-button-active: #ce93d8; /* світлий пурпурний */
+  --color-border: #e0e0e0; /* світло-сірий для рамок */
 }
 
 img {

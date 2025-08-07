@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.fade-in-screen {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  animation: fadeIn 2s ease-out forwards;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.buy-message {
+  position: absolute;
+  font-size: 3rem;
+  color: #ff0033;
+  font-weight: 800;
+  user-select: none;
+  pointer-events: none;
+  animation: blink 0.8s infinite, moveScale 2s ease-in-out forwards;
+  text-shadow: 0 0 5px white;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveScale {
+  0% {
+    transform: translate(0, 0) scale(0.7);
+  }
+  100% {
+    transform: translate(10px, 10px) scale(1.4);
+  }
+}
