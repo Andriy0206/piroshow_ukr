@@ -7,31 +7,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
   /* outline: 1px solid red; */
 }
 
 :root {
-  scroll-behavior: smooth;
+  /* Основні фонові кольори */
+  --color-background: #1c1c1e; /* темний графітовий фон */
+  --color-primary-background: #2a2a2d; /* трохи світліший графіт для секцій */
 
-  --color-primary: rgba(198, 78, 170, 0.6); /* м’який фіолетово-рожевий */
-  --color-accent: rgba(165, 47, 73, 0.65); /* пастельний рожевий */
-  --color-secondary: #987fe9; /* приглушений фіолетовий */
-  --color-tertiary: #e47755; /* пастельний помаранчевий */
-  --color-success: rgb(142, 203, 72); /* світло-зелений (успіх) */
-  --color-error: #f52c2c; /* м’який червоний (помилка) */
-  --color-warning: rgba(239, 108, 51, 0.898); /* пастельний жовто-оранжевий */
-  --color-info: #55c2f5; /* м’який блакитний (інфо) */
-  --color-light: #acabab; /* дуже світлий сірий */
-  --color-dark: #424242; /* темний сірий, не чисто чорний */
-  --color-primary-background: #cceeff; /* пастельне блакитне тло */
+  /* Текст */
+  --color-text-dark: #eaeaea; /* майже білий, але не ріже око */
+  --color-text-light: #a0a0a0; /* вторинний текст */
 
-  --color-text-dark: #333333; /* базовий темний текст */
-  --color-text-light: #888888; /* приглушений сірий текст */
+  /* Основні кольори */
+  --color-primary: #3f4a54; /* графіт з синюватим відтінком */
+  --color-secondary: #505c68; /* світліший графіт */
+  --color-tertiary: #6b7280; /* сірий з легким синім */
+  --color-accent-secondary: rgb(80, 126, 78); /* яскравий помаранчевий для акцентів */
 
-  --color-background: #fdfcfa; /* майже білий, теплий фон */
-  --color-button-hover: #b2ebf2; /* світлий бірюзовий */
-  --color-button-active: #ce93d8; /* світлий пурпурний */
-  --color-border: #e0e0e0; /* світло-сірий для рамок */
+  /* Акценти */
+  --color-accent: #f4a261; /* теплий помаранчевий для акцентів */
+  --color-accent-bright: #ff7849; /* яскравіший акцент для кнопок */
+  --color-info: #4fc3f7; /* блакитний акцент */
+  --color-success: #8fdf34; /* яскраво-зелений */
+  --color-warning: #ff9800; /* теплий жовто-оранжевий */
+  --color-error: #f24429; /* яскраво-червоний */
+
+  /* Стани кнопок */
+  --color-button-hover: #ff7849;
+  --color-button-active: #e85d2a;
+
+  /* Декоративні світлі елементи */
+  --color-light: #f5f5f5;
+  --color-dark: #121212;
 }
 
 img {
@@ -43,3 +52,4 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+ 

@@ -1,14 +1,18 @@
-
-.catalog__container{
-  background-color: var(--color-primary-background);
-
-}.catalog__header{
+.catalog {
+  background-image: url();
+}
+.catalog__container {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.catalog__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
-  background-color: var(--color-tertiary);
+  margin-bottom: 1rem;
 }
 .catalog__title {
   display: flex;
@@ -17,13 +21,12 @@
   font-weight: bold;
   color: var(--main-text-color);
 }
-.catalog__category-upperpart{
+.catalog__category-upperpart {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
-  background-color: var(--color-accent);
+  margin-bottom: 1rem;
 }
 .catalog__card {
   background-color: #fff7f0; /* або будь-який інший колір */
@@ -39,6 +42,7 @@
   align-items: center; /* центрує по горизонталі */
   text-align: center; /* центрує текст і інші inline-block елементи */
   margin-bottom: 2rem; /* відступ між картками */
+  color: var(--color-text-dark);
 }
 .catalog__card:hover {
   background-color: var(--color-secondary);
@@ -69,8 +73,8 @@
   font-size: 1.2rem;
   color: var(--main-text-color);
   .catalog__card-feature {
-    color:var(--color-background);
-    background-color: var(--color-button-hover);
+    color: var(--color-background);
+    background-color: var(--color-tertiary);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     margin: 0.5rem 0; /* відступ між елементами */
@@ -78,52 +82,51 @@
     align-items: center; /* центрує іконку і текст по вертикалі */
   }
 }
-.catalog__card-type{
-  color:var(--color-background);
-    background-color: var(--color-accent, #ff4081);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    margin: 0.5rem 0; /* відступ між елементами */
-    display: flex;
-    align-items: center; /* центрує іконку і текст по вертикалі */
+.catalog__card-type {
+  color: var(--color-text-dark);
+  background-color: var(--color-tertiary, #ff4081);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0; /* відступ між елементами */
+  display: flex;
+  align-items: center; /* центрує іконку і текст по вертикалі */
 }
-.catalog__card-price{
-  color:var(--color-background);
-    background-color: var(--color-accent, #ff4081);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    margin: 0.5rem 0; /* відступ між елементами */
-    display: flex;
-    align-items: center; /* центрує іконку і текст по вертикалі */
+.catalog__card-price {
+ color: var(--color-text-dark);
+  background-color: var(--color-tertiary, #ff4081);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0; /* відступ між елементами */
+  display: flex;
+  align-items: center; /* центрує іконку і текст по вертикалі */
 }
-.catalog__category-upperpart{
+.catalog__category-upperpart {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
-
 }
-.catalog__category--smoke{
+.catalog__category--smoke {
   display: grid;
-        /*створюємо гріт-контейнер*/
-        gap: 24px;
-        grid-template-columns: repeat(1, 1fr);
-        /*одна картка коли малий екран( одна колонка адна частина вільного простору */
-        @media (min-width: 478px) {
-          grid-template-columns: repeat(2, 1fr);
-          /*дві картки коли середній екран (дві колонки одна частина вільного простору*/
-        }
+  /*створюємо гріт-контейнер*/
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+  /*одна картка коли малий екран( одна колонка адна частина вільного простору */
+  @media (min-width: 478px) {
+    grid-template-columns: repeat(2, 1fr);
+    /*дві картки коли середній екран (дві колонки одна частина вільного простору*/
+  }
 
-        @media (min-width: 990px) {
-          grid-template-columns: repeat(4, 1fr);
-          /*три картки коли великий екран (4 колонки одна частина доступного простору */
-        }
+  @media (min-width: 990px) {
+    grid-template-columns: repeat(4, 1fr);
+    /*три картки коли великий екран (4 колонки одна частина доступного простору */
+  }
 }
 
-.catalog__card-button{
-  color: var(--color-background);
-  background-color: var(--color-button-hover);
+.catalog__card-button {
+  color: var(--color-text-dark);;
+  background-color: var(--color-tertiary);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   margin: 0.5rem 0; /* відступ між елементами */
@@ -134,4 +137,40 @@
   background-color: var(--color-button-active);
   cursor: pointer;
 }
+.catalog__menu {
+  display: flex;
+  flex-wrap: wrap; /* дозволяє перенос кнопок на новий рядок */
+  justify-content: center;
+  gap: 12px; /* проміжки між кнопками замість margin */
+  padding: 16px;
+  margin-bottom: 2rem;
+}
 
+/* Окремо стилізуємо сам пункт меню */
+.catalog__menu-item {
+  margin: 0 10px;
+  border-radius: 8px;
+  background-color: var(--color-primary); 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Стилізація самого посилання як кнопки */
+.catalog__group-link {
+  display: block; /* щоб фон і паддінг охоплював увесь елемент */
+  padding: 8px 16px;
+  color: var(--color-text-dark);; /* текст — світлий, щоб контрастувати */
+  text-decoration: none; /* прибирає підкреслення */
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* Ховер ефект для всієї кнопки */
+.catalog__menu-item:hover {
+  background-color: var(--color-accent-secondary); 
+  transform: scale(1.05);
+}
+
+/* Можна додати ефект і для тексту */
+.catalog__menu-item:hover .catalog__group-link {
+  color: var(--color-text-dark); /* текст стає світлим */
+}
