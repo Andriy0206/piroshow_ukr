@@ -45,7 +45,7 @@
 
           &:hover {
             color: var(--color-light);
-            background-color: var(--color-active);
+            background-color: var(--color-primary);
             transform: scale(1.05);
           }
         }

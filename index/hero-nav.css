@@ -1,0 +1,57 @@
+.header-hero {
+  .header-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    .header-hero__content {
+      margin: 0 auto;
+      padding: 1rem;
+      .header-hero__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--color-primary-background);
+        margin-bottom: 1rem;
+      }
+      .header-hero__subtitle {
+        font-size: 1.5rem;
+        color: var(--color-primary-background);
+        margin-top: 0.5rem;
+      }
+    }
+    .header-hero__logo-menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem;
+
+      .header-hero__logo{
+        width: 150px; /* або інший розмір */
+        height: auto;
+        margin-right: 1rem;
+
+      }
+      .header-hero__menu{
+        .header-hero__menu-link{
+          color: var(--color-text-dark);
+          background-color: var(--color-primary);
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+
+          &:hover {
+            background-color: var(--color-accent-secondary);
+            color: var(--color-light);
+            transform: scale(1.05);
+          }
+
+        }
+      }
+    }
+  }
+}
