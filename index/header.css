@@ -1,4 +1,6 @@
 .header__nav {
+  display: flex;
+  flex-direction: column; 
   .header__nav-container {
     .header__nav-top {
       display: flex;
@@ -33,7 +35,7 @@
 
         .header__nav-phone-link {
           display: inline-block;
-          background-color: var(--color-info);
+          background-color: var(--color-accent-secondary);
           color: #fff;
           padding: 0.5rem 1.25rem;
           font-weight: 600;
@@ -42,8 +44,8 @@
           transition: background-color 0.3s ease, transform 0.2s ease;
 
           &:hover {
-            color: var(--color-error);
-            background-color: var(--color-success);
+            color: var(--color-light);
+            background-color: var(--color-active);
             transform: scale(1.05);
           }
         }

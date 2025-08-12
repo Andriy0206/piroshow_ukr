@@ -10,6 +10,14 @@
  
   /* outline: 1px solid red; */
 }
+body {
+  background-image: url("/img/fon-main.png");
+  background-size: cover;          /* зберігає пропорції, заповнює екран */
+  background-position: center;     /* центрує картинку */
+  background-repeat: no-repeat;
+  background-attachment: scroll;   /* fixed дає паралакс, але на мобайлі проблеми */
+  background-color: var(--color-secondary); /* запасний колір під картинкою */
+}
 
 :root {
   /* Основні фонові кольори */
@@ -24,10 +32,10 @@
   --color-primary: #3f4a54; /* графіт з синюватим відтінком */
   --color-secondary: #505c68; /* світліший графіт */
   --color-tertiary: #6b7280; /* сірий з легким синім */
-  --color-accent-secondary: rgb(80, 126, 78); /* яскравий помаранчевий для акцентів */
+  --color-accent-secondary: rgb(59, 165, 128); /* смарагдовий */
 
   /* Акценти */
-  --color-accent: #f4a261; /* теплий помаранчевий для акцентів */
+  --color-accent: #4add89; /* світлий смарагд */
   --color-accent-bright: #ff7849; /* яскравіший акцент для кнопок */
   --color-info: #4fc3f7; /* блакитний акцент */
   --color-success: #8fdf34; /* яскраво-зелений */
@@ -37,6 +45,9 @@
   /* Стани кнопок */
   --color-button-hover: #ff7849;
   --color-button-active: #e85d2a;
+  --color-active: #2cb1bc;   /* яскравий, помітний */
+--color-inactive: #88929e; /* спокійний, непомітний */
+
 
   /* Декоративні світлі елементи */
   --color-light: #f5f5f5;

@@ -1,4 +1,6 @@
 .header-hero {
+  position: relative;
+  padding: 15px 0 ;
   .header-hero__content {
     display: flex;
     flex-direction: column;
@@ -42,7 +44,7 @@
 
       .btn-buy-now {
         color: white;
-        background-color: var(--color-accent, #ff4081);
+        background-color: var(--color-accent-secondary);
 
         &:hover {
           background-color: var(--color-primary, #e91e63);
@@ -51,13 +53,13 @@
 
         &:active {
           transform: scale(0.95);
-          background-color: var(--color-button-active, #d500f9);
+          background-color: var(--color-accent);
         }
       }
 
       .btn-outline {
         color: white;
-        background-color: var(--color-accent, #ff4081);
+        background-color: var(--color-accent-secondary);
 
         &:hover {
           background-color: var(--color-primary, #e91e63);
@@ -66,7 +68,7 @@
 
         &:active {
           transform: scale(0.95);
-          background-color: var(--color-button-active, #d500f9);
+          background-color: var(--color-accent);
         }
       }
     }

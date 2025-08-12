@@ -17,6 +17,7 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--main-text-color);
+  padding: 0.5rem 1rem;
 }
 .catalog__category-upperpart {
   display: flex;
@@ -26,7 +27,7 @@
   margin-bottom: 1rem;
 }
 .catalog__card {
-  background-image: url("../img/fon.png"); /* заміни на актуальний шлях до зображення */
+  background-image: url("../img/fon-main-second.png"); /* заміни на актуальний шлях до зображення */
   background-size: 100%;
   background-position: center;
   border-radius: 50px;
@@ -114,14 +115,14 @@
   }
 
   @media (min-width: 990px) {
-    grid-template-columns: repeat(4, 1fr);
-    /*три картки коли великий екран (4 колонки одна частина доступного простору */
+    grid-template-columns: repeat(3, 1fr);
+    /*три картки коли великий екран (3 колонки одна частина доступного простору */
   }
 }
 
 .catalog__card-button {
   color: var(--color-text-dark);
-  background-color: var(--color-tertiary);
+  background-color: var(--color-inactive);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   margin: 0.5rem 0; /* відступ між елементами */
@@ -129,7 +130,7 @@
   align-items: center; /* центрує іконку і текст по вертикалі */
 }
 .catalog__card-button:hover {
-  background-color: var(--color-button-active);
+  background-color: var(--color-active);
   cursor: pointer;
 }
 .catalog__menu {
