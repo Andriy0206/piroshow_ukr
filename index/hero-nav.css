@@ -4,7 +4,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+
+    
 
     .header-hero__content {
       margin: 0 auto;
@@ -21,35 +23,54 @@
         margin-top: 0.5rem;
       }
     }
-    .header-hero__logo-menu{
+    .header-hero__logo-menu {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      padding: 1rem;
-
-      .header-hero__logo{
-        width: 150px; /* або інший розмір */
-        height: auto;
-        margin-right: 1rem;
-
+      
+      
+      .header-hero__logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 23px;
+        width: 100%;
+        overflow: hidden; /* щоб нічого не вилазило за межі */
       }
-      .header-hero__menu{
-        .header-hero__menu-link{
-          color: var(--color-text-dark);
-          background-color: var(--color-primary);
+
+      .header-hero__logo-image {
+        height: 400px;
+        margin-right: 0.5rem;
+        padding: 1.5rem;
+        display: block;
+        width: 400px;
+        border-radius: 55px;
+      }
+
+      .header-hero__menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-rows: repeat(2, 1fr); /* 2 рядки */
+        width: 400px; /* розмір усього квадрата */
+        height: 400px; /* розмір усього квадрата */
+        .header-hero__menu-link {
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--color-secondary);
+          color: white;
           text-decoration: none;
-          padding: 0.5rem 1rem;
-          border-radius: 8px;
-          transition: background-color 0.3s ease, transform 0.2s ease;
+          font-weight: bold;
+          border: 1px solid white; /* роздільні лінії */
+          font-size: 0.9rem;
+          transition: background-color 0.3s ease;
 
           &:hover {
-            background-color: var(--color-accent-secondary);
-            color: var(--color-light);
-            transform: scale(1.05);
+            background-color: var(--color-accent);
           }
-
         }
       }
     }
