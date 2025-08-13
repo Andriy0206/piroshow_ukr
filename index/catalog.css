@@ -48,11 +48,13 @@
   transition: transform 0.3s ease, background-color 0.3s ease; /* плавність */
 }
 .catalog__category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 2rem;
+  display: grid; /* або flex, як у тебе */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.catalog__category--hidden {
+  display: none !important;
 }
 .catalog__card-image {
   display: flex;
@@ -163,4 +165,13 @@
 /* Можна додати ефект і для тексту */
 .catalog__menu-item:hover .catalog__group-link {
   color: var(--color-text-dark); /* текст стає світлим */
+}
+.catalog__group-link.active {
+  background-color: var(--color-accent-secondary); /* зелений для активної категорії */
+  font-weight: bold; /* опційно, щоб виділити */
+  color: var(--color-text-dark); /* текст — світлий, щоб контрастувати */
+  border: 2px solid var(--color-accent); /* опційно, щоб виділити */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* опційно, щоб додати тінь */
+  border-radius: 8px; /* щоб відповідало іншим кнопкам */
+  transition: background-color 0.3s ease, transform 0.2s ease
 }
