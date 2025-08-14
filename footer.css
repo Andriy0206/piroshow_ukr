@@ -89,9 +89,20 @@
     gap: 1rem;
     color: var(--color-text-light);
     font-size: 0.9rem;
+    padding-right: 30px;
+    .footer__bottom-links {
+          color: var(--color-text-light);
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--color-accent); /* Світліший колір при наведенні */
+          }
+        }
+    }
 
     
-  }
+  
   ul{
     list-style: none; /* Прибираємо маркери списку */
     padding: 0; /* Прибираємо внутрішні відступи */
