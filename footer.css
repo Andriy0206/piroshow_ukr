@@ -46,7 +46,7 @@
     }
 
     .footer__menu-item,
-    .footer__social-links {
+    .footer__social-links,.footer__contacts-links{
       display: inline-block; /* Щоб можна було задавати падінги, бордери */
       margin-right: 1rem; /* Відстань між лінками */
       padding: 0.5rem 1rem; /* Внутрішні відступи */
