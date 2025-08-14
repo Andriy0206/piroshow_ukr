@@ -29,7 +29,7 @@
 
         .header__nav-phone-text {
           font-size: 1rem;
-          color: #ffffff;
+          color: var(--color-text-dark);
           margin: 0;
         }
 
