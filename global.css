@@ -33,6 +33,10 @@ body {
   --color-secondary: #505c68; /* світліший графіт */
   --color-tertiary: #5b616f; /* сірий з легким синім */
   --color-accent-secondary: rgb(59, 165, 128); /* смарагдовий */
+  --color-accent-cold: #4fc3f7; /* блакитний акцент */
+  --color-accent-warm: #ff7849; /* теплий акцент */
+  --color-accent-light: #8fdf34; /* яскраво-зелений акцент */
+  --color-accent-dark: #11542a; /* темно зелений акцент */
 
   /* Акценти */
   --color-accent: #4add89; /* світлий смарагд */
